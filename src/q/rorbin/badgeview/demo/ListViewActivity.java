@@ -64,7 +64,8 @@ public class ListViewActivity extends Activity {
 				holder = (Holder) convertView.getTag();
 			}
 			holder.textView.setText(data.get(position));
-			holder.badge.setBadgeNumber(position);
+			//holder.badge.setBadgeNumber(position+1);
+			holder.badge.setBadgeText("第"+(position+1)+"名");
 			holder.badge.setOnDragStateChangedListener(new Badge.OnDragStateChangedListener() {
 				@Override
 				public void onDragStateChanged(int dragState, Badge badge, View targetView) {

@@ -46,7 +46,8 @@ public class RecyclerViewActivity extends Activity {
 		@Override
 		public void onBindViewHolder(Holder holder, int position) {
 			holder.textView.setText(data.get(position));
-			holder.badge.setBadgeNumber(position);
+			holder.badge.setBadgeText(position+"");
+			//holder.badge.setBadgeNumber(position);
 		}
 
 		@Override
